@@ -5,6 +5,7 @@ print("Welcome to the Random Nickname Generator!\n\n" \
 "First_name (nickname) Last_name\n" \
 "Warning: most of the nicknames here are mean. Please enjoy!\n\n")
 
+
 while True:
     first_name = input("What is your first name?  ")
     if any(char.isalpha() for char in first_name):
@@ -17,9 +18,18 @@ while True:
         break
     print("Please enter a valid name (must include letters).")
 
+gender = input("If you are a boy type 1 or if you are a girl type 2: ")
+
+if gender == 1:
+    names = ['Chicken butt', 'Fish Head', 'Lion heart', 'The Eon','Bonehead', 'Knucklehead','Pea Brain','Trash panda','Buffoon', 'Butt head', 'Smelly sock', 'Buffon', 'Gay boy', 'Numb skull', 'Gay boy','Lag Machine', 'Noob Tube', ' Cereal Killer', 'Panic Button', 'Gay boy',' Chaos Goblin', 'Chicken head','Kenchinchin']
+elif gender == 2:
+    names = ['Dr. Doom-pa-Loompa', ' Cuddle Monster', 'Panic Button', 'Tater Tot','Slimy brain']
+else:
+    names = ["Liar pants on fire"]
+
 import random
 
-names = ['chicken', 'Fish Head', 'lion heart', 'the eon','Bonehead', 'Knucklehead','Pea Brain','Tater Tot','Trash panda','Buffoon', 'Butt head']
+
 
 picked_name = random.choice(names)
 # print(picked_name)
