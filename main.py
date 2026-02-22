@@ -19,6 +19,7 @@ while True:
     print("Please enter a valid name (must include letters).")
 
 gender = input("If you are a boy type 1 or if you are a girl type 2: ")
+gender = int(gender)
 
 if gender == 1:
     names = ['Chicken butt', 'Fish Head', 'Lion heart', 'The Eon','Bonehead', 'Knucklehead','Pea Brain','Trash panda','Buffoon', 'Butt head', 'Smelly sock', 'Buffon', 'Gay boy', 'Numb skull', 'Gay boy','Lag Machine', 'Noob Tube', ' Cereal Killer', 'Panic Button', 'Gay boy',' Chaos Goblin', 'Chicken head','Kenchinchin']
